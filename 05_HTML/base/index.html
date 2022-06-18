@@ -31,8 +31,7 @@
                     <fieldset>
                         <legend> Строка поиска </legend>
 
-                        <input type="text" autofocus name="search" required> <label for="search"><sup>
-                                &lowast;</sup></label>
+                        <input type="text" autofocus name="search" required> <label for="search"></label>
                         <input type="submit" value="Поиск"> <br>
                         <label><input name="search_site" type="radio" value="search_site"> на сайте </label>
                         <label><input name="seach_google" type="radio" value="seach_google"> в google <br>
@@ -48,8 +47,8 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="autorisation_form">
                     <fieldset>
                         <legend> Авторизуйтесь</legend>
-                        <input type="text" id="login" name="login" required>
-                        <label for="login"><sup> &lowast; Логин</sup></label><br>
+                        <input type="text" id="login_1" name="login" required>
+                        <label for="login_1"><sup> &lowast; Логин</sup></label><br>
                         <input type="text" id="pass" name="password" required>
                         <label for="pass"><sup> &lowast; Пароль</sup></label><br>
                         <label><input type="checkbox" name="forever"> Оставаться в системе</label> <br>
@@ -90,8 +89,8 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" name="review">
                     <fieldset>
                         <legend> Оставьте ваш отзыв</legend>
-                        <input type="text" id="login" name="login">
-                        <label for="login"><sup> &lowast; Имя</sup></label><br>
+                        <input type="text" id="login_2" name="login">
+                        <label for="login_2"><sup> &lowast; Имя</sup></label><br>
                         <input type="text" id="mail" name="mail">
                         <label for="mail"><sup> &lowast; e-mail</sup></label><br><br>
                         <textarea name="textarea" id="" cols="20" rows="10" lang="ru"> Форма отправки</textarea><br>
@@ -139,8 +138,8 @@
 
             <td>
                 <strong>Загрузка файла на сервер:</strong>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="upload">
-                    enctype="multipart/form-data">
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" name="upload" enctype="multipart/form-data">
+                    
                     <fieldset>
                         <legend>Upload</legend>
                         <label> Файл:</label><br>
