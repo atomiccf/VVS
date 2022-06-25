@@ -1,0 +1,36 @@
+body {
+    
+    text-align: center;
+   
+}
+
+
+.cursive {
+    font-style: italic;
+}
+
+p{
+    text-align: left;
+    
+}
+
+h2{
+    text-indent: 30px;
+    text-align: left;
+    font-family: 'Caveat', cursive;
+    text-decoration: underline;
+
+}
+#hat{
+    text-align: right;
+    white-space: pre;
+
+}
+.text{
+    text-indent: 30px;
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+

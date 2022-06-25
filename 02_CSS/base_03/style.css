@@ -1,0 +1,34 @@
+.navigation {
+    width: 15em;
+    background-color: orange;
+    float: left;
+
+    padding: .5em;
+    overflow: hidden;
+}
+
+
+.article {
+    background-color: red;
+    margin-bottom: .2em;
+    overflow: hidden;
+
+}
+
+.bottom {
+
+    background-color: rgb(23, 209, 169);
+    clear: both;
+
+}
+
+
+
+.image {
+    float: right;
+clear: both;
+}
+
+.wrap{
+    background-color: grey;
+}

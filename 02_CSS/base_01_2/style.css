@@ -1,0 +1,48 @@
+.background_1 {
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -0px -0px;
+    width: 138px;
+    height: 191px;
+    float: left;
+}
+
+.background_2 {
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: 5px -1787px;
+    width: 152px;
+    height: 192px;
+    float: left;
+    margin-left: -60px;
+}
+
+.background_3 {
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -283px -1390px;
+    width: 152px;
+    height: 191px;
+    float: left;
+    margin-left: -60px;
+}
+
+.background_4 {
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: -140px -2187px;
+    width: 152px;
+    height: 191px;
+    float: left;
+    margin-left: -60px;
+}
+
+.background_5 {
+    background-image: url(cards.png);
+    background-repeat: no-repeat;
+    background-position: 3px -2389px;
+    width: 152px;
+    height: 191px;
+    float: left;
+    margin-left: -60px;
+}
