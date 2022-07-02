@@ -1,0 +1,10 @@
+.block
+
+{
+    padding: auto;
+    border: width 100px;
+    border: 100px solid red;
+    border-image: url(/images/img13.png) 100;
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+}
