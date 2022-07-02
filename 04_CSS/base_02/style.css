@@ -19,11 +19,6 @@ td,th:not(tr:nth-child(1)) {
     border-bottom: 2px dotted;
 }
 
-tr:not(tr:nth-child(1)) {
-    border-right: 2px dotted;
-    border-bottom: 2px dotted;
-}
-
 
 
 tr:hover {
