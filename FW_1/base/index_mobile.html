@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation-float.min.css"
+          integrity="sha512-LSYG1wfgim4owXFFJrK6pkikbwBr0iF8hCMOo0EFUuF/rut09ry21JGoLx+raCL9oE/no/e18kln42652dy+7Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation.min.css"
+          integrity="sha512-TgmH0v8FUwmsr3yDgd5PTCgR6lRZ2Q5c7KsUNTHcoxZpOExCX16MYECIL4xdRQOhQlz7pCnZlmA4zda58QWxBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+
+<body>
+
+<div class="grid-container fluid">
+    <div class="grid-y grid margin-y style= height: 50px;">
+        <div class="cell small-2">
+            <h1>HOW-TO: Программа на Python, Часть 1</h1>
+        </div>
+    </div>
+</div>
+<div class="grid-container fluid">
+    <div class="grid-y grid margin-y style=height: 500px;">
+        <div class="cell small-4 ">
+            <ul>
+                <li><a href="index1.html"><em>Программа на Python — часть 1</em> </a></li>
+                <li><a href="index2.html"><em>Программа на Python — часть 2</em> </a></li>
+                <li><a href="index3.html"><em>Программа на Python — часть 3</em> </a></li>
+            </ul>
+        </div>
+        <div class="cell small-6">
+            <h3>HOW-TO: Программа на Python,<br> Часть 1</h3>
+        </div>
+    </div>
+</div>
+
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-4 ">
+        <a name="content"><h2>Содержание</h2></a>
+        <ul>
+            <li><a href="#first programm">Наша первая программа</a></li>
+            <li><a href="#for example">Пример цикла For</a></li>
+        </ul>
+    </div>
+    <div class="cell small-8">
+        <p>
+            Из множества существующих языков программирования Python — один из самых лёгких<br>
+            в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.<br>
+            Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не<br>
+            обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим<br>
+            создание консольных приложений, а в следующей — программирование графических<br>
+            интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.<br>
+        </p>
+    </div>
+</div>
+
+
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-4 ">
+        <a name="first programm">
+            <h2>Наша первая программа</h2>
+        </a>
+        <a href="#content"> К содержанию</a>
+    </div>
+    <div class="cell small-8">
+        <p>
+            Наберём код в текстовом редакторе (например, в <b> gedit</b>). Потом мы разберёмся, что делает
+            каждая строка и пойдём дальше.
+        </p>
+        <p>
+            Введите эти 4 строки:
+        </p>
+    </div>
+</div>
+
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-4 ">
+        <code>
+            #!/usr/bin/env python<br>
+            print 'Hello. I am a python program.'<br>
+            name = raw_input("What is your name?")<br>
+            print "Hello there, " + name + "!"
+        </code>
+    </div>
+</div>
+
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-8 ">
+        <p>
+            Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в
+            папке <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто
+            написать программу на Python. Для запуска программы нужно сделать её файл
+            исполняемым. Для этого введите в терминале
+        </p>
+
+    </div>
+    <div class="cell small-4 ">
+        <kbd>
+            <b><em>
+                <ins>chmode &#43;x hello&#46;py</ins>
+            </em></b>
+        </kbd>
+        <p>
+            в папке, в которой вы сохранили программу. Теперь запустите её.
+        </p>
+    </div>
+</div>
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-4 ">
+        <kbd>
+            <code>
+                greg@earth:~/python_examples$ ./hello.py<br>
+                Hello. I am a python program.<br>
+                What is your name? Ferd Burphel<br>
+                Hello there, Ferd Burphel!<br>
+                greg@earth:~/python_examples$
+            </code>
+        </kbd>
+        <p>Вот и всё.</p>
+    </div>
+    <div class="cell small-8 ">
+        <a name="for example">
+            <h2>Пример цикла For</h2>
+        </a>
+        <a href="#content"> К содержанию</a>
+
+    </div>
+</div>
+<div class="grid-y grid margin-y style=height: 500px;">
+    <div class="cell small-4 ">
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+            редактор и наберите следующую программу:
+        </p>
+    </div>
+    <div class="cell small-8 ">
+        <kbd>
+            <code>
+                #!/usr/bin/env python<br>
+                for cntr in range(0,10):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print cntr
+            </code>
+        </kbd>
+        <p>
+            <em>Не забудьте поставить символ табуляции перед строкой &#171;print cntr&#187;.</em> Это важно.
+            В<br>
+            Python для указания на блоки кода используются не круглые &#171;<b>&#40;</b>&#187; и фигурные
+            &#171;<b>&#123;</b>&#187; скобки <br>
+            как в других языках программирования, а отступы.
+        </p>
+    </div>
+</div>
+
+
+</body>
+
+</html>

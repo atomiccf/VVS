@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>table_jquery</title>
+</head>
+<style>
+    @import url(style.css);
+
+</style>
+<body>
+<table>
+    <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+    <tr>
+        <th>ФИО</th>
+        <th>пол</th>
+        <th>должность</th>
+        <th>дата рож.</th>
+        <th>Данные 01</th>
+        <th>Данные 01</th>
+    </tr>
+
+
+    <tr class="row">
+        <th>Иванов Иван Иванович</th>
+        <td>М</td>
+        <td>начальник</td>
+        <td>01.01.1960</td>
+        <td>4567</td>
+        <td>3453</td>
+    </tr>
+
+
+    <tr class="row">
+        <th>Петрова Илона Петровна</th>
+        <td>Ж</td>
+        <td>секретарь</td>
+        <td>01.01.1989</td>
+        <td>98795</td>
+        <td>46523</td>
+    </tr>
+
+
+    <tr class="row">
+        <th>Сидоров Илья Игоревич</th>
+        <td>М</td>
+        <td>бухгалтер</td>
+        <td>01.01.1979</td>
+        <td>743434</td>
+        <td>987979</td>
+    </tr>
+
+
+    <tr class="row">
+        <th>Пупин Федор Федорович</th>
+        <td>М</td>
+        <td>водитель</td>
+        <td>01.01.1963</td>
+        <td>743223434</td>
+        <td>9232379</td>
+    </tr>
+
+
+    <tr class="row">
+        <th>Крупин Сергей Иванович</th>
+        <td>М</td>
+        <td>водитель 2</td>
+        <td>01.01.1983</td>
+        <td>3234534</td>
+        <td>923123379</td>
+    </tr>
+
+
+</table>
+
+<input type="button" id="show" value="Нет скрытых строк">
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+
+</script>
+
+<script>
+    $(".row").click(function () {
+        $(this).toggle();
+        if ($('.row').is(':hidden')) {
+            $(show).val('Показать строки!');
+            $(show).text('показать строки!');
+        } else {
+            $(this).val('Нет скрытых строк');
+            $(this).text('Нет скрытых строк');
+
+        }
+
+    });
+    $("#show").click(function () {
+        $('.row').show();
+
+    });
+
+
+</script>
+</body>
+</html>
