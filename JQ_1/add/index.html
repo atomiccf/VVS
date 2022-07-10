@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ_validation</title>
+</head>
+<body>
+
+<form action="" method="get" name="autorisation_form">
+    <fieldset>
+        <legend><h2>Проверка пароля</h2></legend>
+        <input type="text" id="pass_enter" name="login" required>
+        <label for="pass_enter"> Пароль</label><br>
+        <input type="text" id="pass_valid" name="password" required>
+        <label for="pass_valid">  Проверить пароль</label><br>
+        <input type="submit" value="Отправить"> <br>
+
+    </fieldset>
+</form>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+
+</script>
+<script>
+    $(document).ready(function ($) {
+
+        $("#pass_valid").on("keyup", function () {
+            var pass = $("#pass_enter").val();
+            var pass_val = $("#pass_valid").val();
+            if (pass != pass_val) {
+                $("#pass_enter").css({backgroundColor:"red"});
+                $("#pass_valid").css({backgroundColor:"red"});
+            } else {
+                $("#pass_enter").css({backgroundColor:"green"});
+                $("#pass_valid").css({backgroundColor:"green"});
+            }
+
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
