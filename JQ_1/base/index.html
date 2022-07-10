@@ -84,31 +84,32 @@
 </script>
 
 <script>
-    $(".row").click(function () {
-        $(this).toggle();
-        if ($('.row').is(':hidden')) {
-            $(show).val('Показать строки!');
-            $(show).text('показать строки!');
-        } else {
-            $(show).val('Нет скрытых строк');
-            $(show).text('Нет скрытых строк');
+    $(document).ready(function () {
+        $(".row").click(function () {
+            $(this).toggle();
+            if ($(this).is(':hidden')) {
+                $('#show').val('Показать строки!');
+                $('#show').text('показать строки!');
+            } else {
+                $('#show').val('Нет скрытых строк');
+                $('#show').text('Нет скрытых строк');
+            }
+        });
+        $("#show").click(function () {
+            $('.row').show();
+            if ($('.row').is(':hidden')) {
+                $('#show').val('Показать строки!');
+                $('#show').text('показать строки!');
+            } else {
+                $('#show').val('Нет скрытых строк');
+                $('#show').text('Нет скрытых строк');
 
-        }
-
+            }
+        });
     });
-    $("#show").click(function () {
-        $('.row').show();
-        if ($('.row').is(':hidden')) {
-            $(show).val('Показать строки!');
-            $(show).text('показать строки!');
-        } else {
-            $(show).val('Нет скрытых строк');
-            $(show).text('Нет скрытых строк');
-
-        }
-    });
-
 
 </script>
+
+
 </body>
 </html>
