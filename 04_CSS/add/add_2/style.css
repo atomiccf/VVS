@@ -1,0 +1,35 @@
+
+.chess {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 4px double black;
+
+}
+
+.chess tr:nth-child(odd) td:nth-child(odd) {
+    border: 60px double black;
+    background: black;
+    font-size: medium;
+}
+
+.chess tr:nth-child(even) td:nth-child(even) {
+    border: 60px double black;
+    background: black;
+
+
+}
+
+
+.chess tr:first-child {
+    counter-set: counterName 65;
+    color: green;
+
+}
+
+.chess td::before {
+    counter-increment: counterName -1;
+    content: counter(counterName);
+    color: green;
+
+}
