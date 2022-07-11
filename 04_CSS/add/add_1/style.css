@@ -1,0 +1,48 @@
+p {
+
+    text-indent: 2em;
+    border: 2px outset #666;
+    border-radius: 1em/2em 0;
+    padding: 0 60px 0 0;
+    white-space: pre-line;
+}
+
+a[href="#"]:first-child::before {
+    content: url("images/download.png");
+}
+
+a[name="word"]::after {
+    content: url("images/word.jpg");
+
+}
+
+a[name="PDF"]::after {
+    content: url("images/pdf.png");
+}
+
+a[name="Zip"]::after {
+    content: url("images/zip.gif");
+}
+
+
+a.image::before {
+    content: url("images/doc.jpg");
+}
+
+
+#how_1:hover {
+    background: url(images/word.jpg) no-repeat 100%;
+    padding-right: 50px;
+
+}
+
+#how_2:hover {
+    background: url(images/pdf.png) no-repeat 100%;
+    padding-right: 50px;
+
+}
+
+#how_3:hover {
+    background: url(images/zip.gif) no-repeat 100%;
+    padding-right: 50px;
+}
