@@ -28,7 +28,7 @@
 <script>
     $(document).ready(function ($) {
 
-        $("#pass_valid").on("keyup", function () {
+        $("#pass_valid").keyup(function () {
             var pass = $("#pass_enter").val();
             var pass_val = $("#pass_valid").val();
             if (pass != pass_val) {
